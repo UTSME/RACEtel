@@ -3,5 +3,5 @@ RACEtel is a project with the goal of using off the shelf hardware to transcribe
 
 HARWARE:
 -Arduino Uno
--CANbus shield
--4g shield
+-MCP2515 CAN BUS Shield
+-SIM900 GPRS/GSM Shield
