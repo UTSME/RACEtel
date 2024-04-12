@@ -3,7 +3,7 @@
 //unused can ids provided for reference
 
 
-const int CANID_MOTOR_POSITION_INFO = 0x0A5;// Position info for resolver cali
+const int CANID_MOTOR_POSITION_INFO = 0x0A5;// PM150DZ broadcast position info for resolver cali
 const int CANID_MC_STATES = 0x0AA;          // PM150DZ broadcast internal states
 const int CANID_MC_FAULTS = 0x0AB;          // PM150DZ broadcast faults
 const int CANID_MC_DATA = 0x0B0;            // PM150DZ broadcast live data (latency)
