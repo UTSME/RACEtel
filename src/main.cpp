@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include <SPI.h>
 #include <CAN.h>
+#include <CanAddresses.h>
 
 
 #define TINY_GSM_MODEM_SIM7600
@@ -104,15 +105,6 @@ void loop() {
   if (packetSize || CAN.packetId() != -1) {
     // received a packet
     Serial.print("Received ");
-
-    if (CAN.packetExtended()) {
-      Serial.print("extended ");
-    }
-
-    if (CAN.packetRtr()) {
-      // Remote transmission request, packet contains no data
-      Serial.print("RTR ");
-    }
 
     Serial.print("packet with id 0x");
     Serial.print(CAN.packetId(), HEX);
